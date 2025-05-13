@@ -1,4 +1,3 @@
-Algoritma :insertionsort-desc10k  Süre (ms): 28.3624
 0
 1
 1

@@ -1,4 +1,3 @@
-Algoritma :insertionsort-asc100k  Süre (ms): 1.1853
 0
 0
 1

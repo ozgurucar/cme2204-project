@@ -1,4 +1,3 @@
-Algoritma :mergesort-asc100k  Süre (ms): 23.3105
 0
 0
 1

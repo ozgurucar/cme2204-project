@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-class Sorting{
+class Sorting {
     public static String file1K = "1K_random_input.txt";
     public static String file10K = "10K_random_input.txt";
     public static String file100K = "100K_random_input.txt";
@@ -12,57 +12,57 @@ class Sorting{
     public static ArrayList<Integer> numList10K = readFile(file10K);
     public static ArrayList<Integer> numList100K = readFile(file100K);
     public static void main(String[] args) {
-        ProcessAndWrite.processAndWrite(NumLists.random100K, "mergesort-random100k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.random100K, "insertionsort-random100k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.random100K, "quicksort-random100k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.random100K, "heapsort-random100k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.random100K, "mergesort_100K_random_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.random100K, "insertionsort_100K_random_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.random100K, "quicksort_100K_random_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.random100K, "heapsort_100K_random_output.txt", "heapsort");
 
 
-        ProcessAndWrite.processAndWrite(NumLists.asc100K, "mergesort-asc100k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.asc100K, "insertionsort-asc100k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.asc100K, "quicksort-asc100k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.asc100K, "heapsort-asc100k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.asc100K, "mergesort_100K_increasing_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.asc100K, "insertionsort_100K_increasing_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.asc100K, "quicksort_100K_increasing_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.asc100K, "heapsort_100K_increasing_output.txt", "heapsort");
 
 
 
-        ProcessAndWrite.processAndWrite(NumLists.desc100K, "mergesort-desc100k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.desc100K, "insertionsort-desc100k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.desc100K, "quicksort-desc100k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.desc100K, "heapsort-desc100k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.desc100K, "mergesort_100K_decreasing_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.desc100K, "insertionsort_100K_decreasing_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.desc100K, "quicksort_100K_decreasing_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.desc100K, "heapsort_100K_decreasing_output.txt", "heapsort");
 
 
-        ProcessAndWrite.processAndWrite(NumLists.random10K, "mergesort-random10k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.random10K, "insertionsort-random10k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.random10K, "quicksort-random10k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.random10K, "heapsort-random10k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.random10K, "mergesort_10K_random_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.random10K, "insertionsort_10K_random_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.random10K, "quicksort_10K_random_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.random10K, "heapsort_10K_random_output.txt", "heapsort");
 
 
-        ProcessAndWrite.processAndWrite(NumLists.asc10K, "mergesort-asc10k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.asc10K, "insertionsort-asc10k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.asc10K, "quicksort-asc10k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.asc10K, "heapsort-asc10k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.asc10K, "mergesort_10K_increasing_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.asc10K, "insertionsort_10K_increasing_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.asc10K, "quicksort_10K_increasing_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.asc10K, "heapsort_10K_increasing_output.txt", "heapsort");
 
 
-        ProcessAndWrite.processAndWrite(NumLists.desc10K, "mergesort-desc10k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.desc10K, "insertionsort-desc10k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.desc10K, "quicksort-desc10k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.desc10K, "heapsort-desc10k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.desc10K, "mergesort_10K_decreasing_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.desc10K, "insertionsort_10K_decreasing_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.desc10K, "quicksort_10K_decreasing_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.desc10K, "heapsort_10K_decreasing_output.txt", "heapsort");
 
-        ProcessAndWrite.processAndWrite(NumLists.random1K, "mergesort-random1k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.random1K, "insertionsort-random1k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.random1K, "quicksort-random1k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.random1K, "heapsort-random1k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.random1K, "mergesort_1K_random_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.random1K, "insertionsort_1K_random_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.random1K, "quicksort_1K_random_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.random1K, "heapsort_1K_random_output.txt", "heapsort");
 
-        ProcessAndWrite.processAndWrite(NumLists.asc1K, "mergesort-asc1k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.asc1K, "insertionsort-asc1k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.asc1K, "quicksort-asc1k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.asc1K, "heapsort-asc1k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.asc1K, "mergesort_1K_increasing_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.asc1K, "insertionsort_1K_increasing_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.asc1K, "quicksort_1K_increasing_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.asc1K, "heapsort_1K_increasing_output.txt", "heapsort");
 
 
-        ProcessAndWrite.processAndWrite(NumLists.desc1K, "mergesort-desc1k.txt", "mergesort");
-        ProcessAndWrite.processAndWrite(NumLists.desc1K, "insertionsort-desc1k.txt", "insertionsort");
-        ProcessAndWrite.processAndWrite(NumLists.desc1K, "quicksort-desc1k.txt", "quicksort");
-        ProcessAndWrite.processAndWrite(NumLists.desc1K, "heapsort-desc1k.txt", "heapsort");
+        ProcessAndWrite.processAndWrite(NumLists.desc1K, "mergesort_1K_decreasing_output.txt", "mergesort");
+        ProcessAndWrite.processAndWrite(NumLists.desc1K, "insertionsort_1K_decreasing_output.txt", "insertionsort");
+        ProcessAndWrite.processAndWrite(NumLists.desc1K, "quicksort_1K_decreasing_output.txt", "quicksort");
+        ProcessAndWrite.processAndWrite(NumLists.desc1K, "heapsort_1K_decreasing_output.txt", "heapsort");
 
         //InsertionSort.printArray(sorted);
         

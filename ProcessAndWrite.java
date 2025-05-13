@@ -11,7 +11,7 @@ public class ProcessAndWrite {
         start = System.nanoTime();
         sorted = MergeSort.mergeSort(arr, 'a');
         end = System.nanoTime();
-        elapsedTime = end - start; // nanonsaniye cinsinden geçen süre
+        elapsedTime = end - start;
         }
 
         if(operation.toLowerCase().equals("insertionsort")) {
@@ -20,7 +20,7 @@ public class ProcessAndWrite {
             start = System.nanoTime();
             sorted = InsertionSort.instertionSort(arr);
             end = System.nanoTime();
-            elapsedTime = end - start; // nanonsaniye cinsinden geçen süre
+            elapsedTime = end - start;
         }
 
         if(operation.toLowerCase().equals("quicksort")) {
@@ -29,7 +29,7 @@ public class ProcessAndWrite {
             start = System.nanoTime();
             sorted = QuickSort.quickSort(arr);
             end = System.nanoTime();
-            elapsedTime = end - start; // nanonsaniye cinsinden geçen süre
+            elapsedTime = end - start;
         }
 
         if(operation.toLowerCase().equals("heapsort")) {
@@ -38,16 +38,16 @@ public class ProcessAndWrite {
             start = System.nanoTime();
             sorted = HeapSort.heapSort(arr);
             end = System.nanoTime();
-            elapsedTime = end - start; // nanonsaniye cinsinden geçen süre
+            elapsedTime = end - start;
         }
         System.out.println("Süre (ns): " + elapsedTime);
-        System.out.println("Süre (ms): " + (elapsedTime / 1_000_000.0)); // milisaniye çevrilmiş hali
+        System.out.println("Süre (ms): " + (elapsedTime / 1_000_000.0));
         System.out.flush();
 
         try(FileWriter fileWriter = new FileWriter(fileName)) {
-            String algoName = fileName.substring(0,fileName.indexOf(".txt"));
+/*            String algoName = fileName.substring(0,fileName.indexOf(".txt"));
             fileWriter.write("Algoritma : " + algoName + "  Süre (ms): " + String.valueOf(elapsedTime / 1_000_000.0));
-            fileWriter.write(System.lineSeparator());
+            fileWriter.write(System.lineSeparator());*/
 
             for(int number : sorted) {
                 fileWriter.write(String.valueOf(number));

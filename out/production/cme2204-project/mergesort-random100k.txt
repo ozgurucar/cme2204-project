@@ -1,4 +1,3 @@
-Algoritma :mergesort-random100k  Süre (ms): 26.7994
 0
 0
 1

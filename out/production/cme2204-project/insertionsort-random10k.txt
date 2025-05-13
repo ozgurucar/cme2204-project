@@ -1,4 +1,3 @@
-Algoritma :insertionsort-random10k  Süre (ms): 14.7372
 0
 1
 1

@@ -1,4 +1,3 @@
-Algoritma :heapsort-random1k  Süre (ms): 0.1271
 0
 0
 0
